@@ -1,0 +1,12 @@
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+Button, Input {
+
+    align-self: center;
+    margin:5px;
+
+
+}
