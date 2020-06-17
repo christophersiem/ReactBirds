@@ -1,15 +1,16 @@
 import React from "react";
 import "./SiteContent.css";
-import Card from "./Card/Card";
-import InputFields from "./InputFields"
+import Card2 from "./Card/Card2";
+import Box from "@material-ui/core/Box";
 
 
 export default function SiteContent(props) {
     return (
-        <main className="flex-grow">
-     <Card content={props.cardContent}/>
-     <InputFields/>
-    </main>
+
+        <Box  display="flex" justifyContent="center" >
+            <Card2 content={props.cardContent}/>
+
+        </Box>
     );
 
 }

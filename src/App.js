@@ -4,6 +4,7 @@ import SiteContent from "./components/SiteContent";
 import SiteFooter from "./components/SiteFooter";
 import "./App.css"
 import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
+import InputFields from "./components/InputFields";
 
 async function getAllBirds() {
     const response = await fetch("https://api.jsonbin.io/b/5ee9e76c0e966a7aa36b3fd4");
@@ -67,6 +68,7 @@ function App() {
 
             </div>
             {content && <SiteContent cardContent={content}/>}
+            <InputFields/>
             <SiteFooter/>
 
         </div>
