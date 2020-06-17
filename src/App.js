@@ -4,7 +4,11 @@ import SiteContent from "./components/SiteContent";
 import SiteFooter from "./components/SiteFooter";
 import "./App.css"
 import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
-import InputFields from "./components/InputFields";
+import Button from "@material-ui/core/Button";
+import makeStyles from "@material-ui/core/styles/makeStyles";
+import SiteButtons from "./components/SiteButtons";
+import TemporaryDrawer from "./components/PermanentDrawerLeft";
+import PermanentDrawerLeft from "./components/PermanentDrawerLeft";
 
 async function getAllBirds() {
     const response = await fetch("https://api.jsonbin.io/b/5ee9e76c0e966a7aa36b3fd4");
@@ -13,7 +17,16 @@ async function getAllBirds() {
 
 }
 
+const useStyles = makeStyles((theme) => ({
+    root: {
+        '& > *': {
+            margin: theme.spacing(1),
+        },
+    },
+}));
+
 function App() {
+
 
     const [content, setContent] = useState();
     const [birds, setBirds] = useState([]);
@@ -58,14 +71,14 @@ function App() {
         <div className="app">
 
             <SiteHeader/>
+            <PermanentDrawerLeft/>
             {fetchState ==="LOADING" && <LoadingSpinner/>}
             <div className="button">
-                <button onClick={setSmallBirdAsContent}>Small bird</button>
-                <button onClick={setBigBirdAsContent}>Big bird</button>
-                <button onClick={setBirdyAsContent}>Birdy</button>
-                <button onClick={setJuergenAsContent}>Jürgen</button>
-                <button onClick={setRandomAsContent}>Random bird</button>
-
+                <SiteButtons title="Small bird" function={setSmallBirdAsContent}/>
+                <SiteButtons title="Big bird" function={setBigBirdAsContent}/>
+                <SiteButtons title="Birdy" function={setBirdyAsContent}/>
+                <SiteButtons title="Jürgen" function={setJuergenAsContent}/>
+                <SiteButtons title="Random" function={setRandomAsContent}/>
             </div>
             {content && <SiteContent cardContent={content}/>}
 
