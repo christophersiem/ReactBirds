@@ -68,7 +68,7 @@ function App() {
 
             </div>
             {content && <SiteContent cardContent={content}/>}
-            <InputFields/>
+
             <SiteFooter/>
 
         </div>
