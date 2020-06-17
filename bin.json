@@ -1,0 +1,26 @@
+{
+  "animals": [
+    {
+      "title": "Big Bird",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis excepturi iure iusto maiores officia ratione. Dolorem esse est itaque?",
+      "imageSource": "https://cdn.prod.www.spiegel.de/images/188c5f65-534b-41b3-be01-2650baa51794_w948_r1.77_fpx50_fpy48.jpg"
+    },
+    {
+      "title": "Small Bird",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis excepturi iure iusto maiores officia ratione. Dolorem esse est itaque?",
+      "imageSource": "https://www.nabu.de/imperia/md/nabu/images/arten/tiere/voegel/lerchen/160118-nabu-feldlerche-gaby-schroeder.jpeg"
+    },
+    {
+      "title": "Birdy",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis excepturi iure iusto maiores officia ratione. Dolorem esse est itaque?",
+      "imageSource": "https://amp.volksstimme.de/storyimage/MA/20190515/DPA/305159999/AR/0/AR-305159999.jpg&MaxW=1200&Imageversion=default"
+    },
+    {
+      "title": "Jürgen Vogel",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis excepturi iure iusto maiores officia ratione. Dolorem esse est itaque?",
+      "imageSource": "https://www.freiepresse.de/DYNIMG/98/77/6909877_W1020C.jpg"
+
+    }
+
+  ]
+}
