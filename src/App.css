@@ -1,19 +1,25 @@
 .app {
-    display:flex;
-    height:100vh;
+    display: flex;
+    height: 100vh;
     flex-flow: column nowrap;
     background-image: url("https://amazing-wings.com/wp-content/uploads/2017/12/Sky-Clouds.jpg");
 }
 
-
-
-
-Button{
-    margin: 10px 5px;
-    width:80px;
-    padding:5px;
-
-
-
-
+.button{
+    display: flex;
+    justify-content: center;
 }
+
+Button {
+    margin: 10px 5px;
+    width: 80px;
+    padding: 5px;
+    align-self: center;
+}
+
+
+
+
+
+
+

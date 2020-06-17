@@ -28,25 +28,28 @@ export default function InputFields() {
 
 
     return (
-        <form onSubmit={handleSubmit}>
-            <div className="center">
-                <input
-                    value={name}
-                    placeholder="name"
-                    type="text"
-                    onChange={handleNameChange}
-                />
 
-                <input
-                    value={age}
-                    placeholder="age"
-                    type="number"
-                    onChange={handleAgeChange}
-                />
-                <button type="submit">submit</button>
-            </div>
-        </form>
-    )
+            <form onSubmit={handleSubmit}>
+                <div className="center">
+                    <p>What are you for a Vogel?</p>
+                    <input
+                        value={name}
+                        placeholder="name"
+                        type="text"
+                        onChange={handleNameChange}
+                    />
+
+                    <input
+                        value={age}
+                        placeholder="age"
+                        type="number"
+                        onChange={handleAgeChange}
+                    />
+                    <button type="submit">Fly</button>
+
+</div>
+</form>
+)
 
 
 }
