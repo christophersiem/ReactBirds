@@ -4,7 +4,7 @@ import "./SiteFooter.css"
 
 export default function SiteFooter(){
     return <footer className="site-footer">
-        <span>footer text</span>
+        <span>Made with MaterialUI</span>
         <NewsletterForm/>
     </footer>;
 }
